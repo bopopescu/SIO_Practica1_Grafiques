@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 #PEL TEMA DE LA DESVIACIÓ CAL MOSTRAR EL PUNT DE LA MITJANA I LLAVORS SI ESTA DESVIAT O NO.
 
 
-
-
 # x axis values
 x = [1, 2, 3]
 # corresponding y axis values
