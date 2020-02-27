@@ -8,7 +8,7 @@ Nombre de vots positius (0,10]:2394970
 usuari amb mes restaurants visitats: L'usuari 9 ha visitat: 100 vegades.
 usuari que ha avaluat pitjor: 34628 
 percentatgeRestaurantsAprobats: 70%
-percentatgeRestaurantsSuspesos(): 30%
+percentatgeRestaurantsSuspesos: 30%
 mitjana de totes les puntuacions: 0.741872
 usuari que ha votat millor: 36945
 puntuacio mes alta de totes: 10.00
