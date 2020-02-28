@@ -23,3 +23,28 @@ ax.set_ylabel('Nombre caselles')
 ax.set_xticklabels(xlabel)
 plt.savefig('../Grafics/puntuacionsBuidesvsPlenes.png', bbox_inches='tight')
 plt.show()
+
+
+file1 = open('../Resultats/influenciaGent.txt', 'r')
+Lines = file1.readlines()
+
+left=[]
+height=[]
+for line in Lines:
+    if line.split(",")[0] != 'idRestaurant':
+        left+=[int(line.split(",")[0])]
+        height+=[int(line.split(",")[1])]
+
+
+# plotting a bar chart
+plt.bar(left, height)
+
+# naming the x-axis
+plt.xlabel('Restaurant')
+# naming the y-axis
+plt.ylabel('Vegades visitat')
+# plot title
+plt.title('Influència de persones')
+plt.savefig('../Grafics/influenciaGent.png', bbox_inches='tight')
+# function to show the plot
+plt.show()

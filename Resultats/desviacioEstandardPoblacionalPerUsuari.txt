@@ -1,4 +1,5 @@
-idUsuari, desviacioEstandardPoblacional1,6.384780610778424
+idUsuari, desviacioEstandardPoblacional
+1,6.384780610778424
 2,6.855582836709898
 3,8.566654953666013
 4,6.371426787504933
