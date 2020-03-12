@@ -5,6 +5,7 @@ file1 = open('../Resultats/probabilitats.txt', 'r')
 Lines = file1.readlines()
 
 
+
 probabilitats=[]
 puntuacio=[]
 for line in Lines:
@@ -16,9 +17,12 @@ print(probabilitats)
 print(puntuacio)
 x=range(1, len(puntuacio)+1)
 
-plt.scatter(x, probabilitats)
-z = np.polyfit(x, probabilitats, 1)
+plt.scatter(puntuacio, probabilitats, label="Probabiltat", color="blue", marker="*", s=30)
+z = np.polyfit(puntuacio, probabilitats, 1)
 p = np.poly1d(z)
-plt.plot(x,p(x),"r--")
+plt.plot(puntuacio,p(puntuacio),"r--")
+plt.xlabel('Puntuació')
+plt.ylabel('Probabilitat')
+plt.legend()
 plt.savefig('../Grafics/probabilitats.png', bbox_inches='tight')
 plt.show()

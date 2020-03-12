@@ -28,11 +28,15 @@ while i<mitjanes.__len__():
     lim_max.append(mitjanes[i]+desvestp[i])
     i=i+1
 
-plt.plot(x,lim_max, color='green')
-plt.plot(x, lim_min, color='red')
-plt.plot(x, mitjanes)
-plt.savefig('../Grafics/MitjanaVSLimInfVSLimSup.png', bbox_inches='tight')
+plt.plot(x,lim_max, color='green', label='Limit Màxim')
+plt.plot(x, lim_min, color='red', label='Limit Mínim')
+plt.plot(x, mitjanes, label='Mitjana')
+plt.legend()
+plt.title('Desviacio/Mitjana')
+plt.xlabel('Restaurants')
+plt.savefig('../Grafics/MitjanaVSLimInfVSLimSup_Restaurant.png', bbox_inches='tight')
 plt.show()
+
 
 file1=open('../Resultats/puntuacionsXRestaurant.txt','r')
 Lines = file1.readlines()
@@ -97,5 +101,3 @@ plt.ylabel('Puntuacions')
 plt.title('Puntuacions entre límits')
 plt.savefig('../Grafics/numPuntuacionsEntreLimits.png', bbox_inches='tight')
 plt.show()
-
-

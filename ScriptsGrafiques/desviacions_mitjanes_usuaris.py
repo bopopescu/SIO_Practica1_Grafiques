@@ -27,9 +27,12 @@ while i<mitjanes.__len__():
     lim_max.append(mitjanes[i]+desvestp[i])
     i=i+1
 
-plt.plot(x,lim_max, color='green')
-plt.plot(x, lim_min, color='red')
-plt.plot(x, mitjanes)
+plt.plot(x,lim_max, color='green', label='Límit màxim')
+plt.plot(x, lim_min, color='red', label='Límit mínim')
+plt.plot(x, mitjanes, label='Mitjana')
+plt.legend()
+plt.title('Desviacio/Mitjana')
+plt.xlabel('Usuaris')
 plt.savefig('../Grafics/MitjanaVSLimInfVSLimSup_Usuari.png', bbox_inches='tight')
 plt.show()
 
@@ -97,5 +100,3 @@ plt.ylabel('Puntuacions')
 plt.title('Puntuacions entre límits')
 plt.savefig('../Grafics/numPuntuacionsEntreLimit_Usuari.png', bbox_inches='tight')
 plt.show()
-
-
