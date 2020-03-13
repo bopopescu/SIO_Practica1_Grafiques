@@ -13,7 +13,7 @@ ax.set_ylabel('Nombre caselles')
 ax.set_xticklabels(xlabel)
 plt.savefig('../Grafics/VotsPositusVSVotsNegatiusVsVotszero.png', bbox_inches='tight')
 plt.show()
-"""
+
 activities = ['Aprobats', 'Suspesos']
 slices=[70,30]
 colors=['g', 'r']
@@ -91,4 +91,4 @@ plt.ylabel('Vegades visitat')
 plt.title('Influència de persones')
 plt.savefig('../Grafics/influenciaGent.png', bbox_inches='tight')
 # function to show the plot
-plt.show()"""
+plt.show()

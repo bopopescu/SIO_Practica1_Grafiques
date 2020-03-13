@@ -21,6 +21,7 @@ plt.scatter(puntuacio, probabilitats, label="Probabiltat", color="blue", marker=
 z = np.polyfit(puntuacio, probabilitats, 1)
 p = np.poly1d(z)
 plt.plot(puntuacio,p(puntuacio),"r--")
+plt.title('Distribució de la Probabilitat')
 plt.xlabel('Puntuació')
 plt.ylabel('Probabilitat')
 plt.legend()
